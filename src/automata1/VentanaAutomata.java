@@ -1039,7 +1039,34 @@ public class VentanaAutomata extends javax.swing.JFrame {
 
     private void ModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModificarActionPerformed
         // TODO add your handling code here:
-        
+        if((AutoMod1.isSelected())&&(AutoMod2.isSelected()==false)){
+            if(CampoMod.getSelectedItem().toString().equals("Alfabeto")){
+                cambiaHabilitar(Alfabeto,true);
+                conta = 0;
+            }
+            else if(CampoMod.getSelectedItem().toString().equals("Estados")){
+                cambiaHabilitar(Estados,true);
+                conta = 0;
+            }
+            else if(CampoMod.getSelectedItem().toString().equals("Transiciones")){
+                cambiaHabilitar(Transiciones,true);
+                conta = 0;
+            }
+        }
+        else if((AutoMod2.isSelected())&&(AutoMod1.isSelected()==false)){
+            if(CampoMod.getSelectedItem().toString().equals("Alfabeto")){
+                cambiaHabilitar(Alfabeto,true);
+                conta = 1;
+            }
+            else if(CampoMod.getSelectedItem().toString().equals("Estados")){
+                cambiaHabilitar(Estados,true);
+                conta = 1;
+            }
+            else if(CampoMod.getSelectedItem().toString().equals("Transiciones")){
+                cambiaHabilitar(Transiciones,true);
+                conta = 1;
+            }
+        }
     }//GEN-LAST:event_ModificarActionPerformed
 
     
